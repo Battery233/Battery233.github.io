@@ -1,0 +1,11 @@
+<p class="links" aria-label="Social links">
+  {% if site.twitter_username %}<a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a>{% endif %}
+  {% if site.linkedin_link %}<a href="https://www.linkedin.com/in/{{ site.linkedin_link }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
+  {% if site.xing_link %}<a href="{{ site.xing_link }}" target="_blank" rel="noopener noreferrer">Xing</a>{% endif %}
+  {% if site.facebook_link %}<a href="{{ site.facebook_link }}" target="_blank" rel="noopener noreferrer">Facebook</a>{% endif %}
+  {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+  {% if site.stackoverflow_link %}<a href="{{ site.stackoverflow_link }}" target="_blank" rel="noopener noreferrer">Stack Overflow</a>{% endif %}
+  {% if site.instagram_username %}<a href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram</a>{% endif %}
+  {% if site.reddit_username %}<a href="https://www.reddit.com/u/{{ site.reddit_username }}" target="_blank" rel="noopener noreferrer">Reddit</a>{% endif %}
+  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+</p>

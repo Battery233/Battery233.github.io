@@ -1,0 +1,37 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<div class="container-fluid index">
+  <div class="row index all-posts">
+
+    <h1 class="header author-header">Search</h1>
+
+    <div id="search-container">
+      <label for="search-input">Search articles</label>
+      <input type="search" id="search-input" placeholder="Title, category, or tag" autocomplete="off">
+      <div class="col-md-12 content-panel articles">
+        <ul id="results-container" aria-live="polite"><li class="search-hint">Start typing to see results</li></ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="search-hr" />
+
+<script src="{{ '/js/jekyll-search.js' | relative_url }}"></script>
+
+<script type="text/javascript">
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    dataSource: '{{ '/search.json' | relative_url }}',
+    searchResultTemplate: '<li><a href="{url}">{title}<\/a><\/li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true,
+  })
+</script>
