@@ -1,0 +1,37 @@
+# Site settings
+title: "Chenghao Ye"
+email: contact@chye.cc
+description: "The personal website of Chenghao Ye."
+baseurl: ""
+url: "https://chye.cc"
+lang: en
+author_name: Chenghao Ye
+title_description: "Welcome to my personal website!"
+title_image: "/favicons/title.png"
+github_repository: https://github.com/Battery233/Battery233.github.io
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username:
+github_username: Battery233
+instagram_username:
+reddit_username:
+linkedin_link: chenghao-ye
+google_plus_link:
+stackoverflow_link:
+xing_link:
+facebook_link:
+
+# Footer
+footer_left: "Made with <span class=\"heart\" aria-hidden=\"true\">♥</span> by Chenghao"
+footer_right: "<a href=\"mailto:contact@chye.cc\">Contact me</a>"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor, Gemfile, Gemfile.lock]

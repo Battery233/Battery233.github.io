@@ -1,0 +1,30 @@
+---
+layout: default
+make-smaller-titles: true
+title: Articles by category
+permalink: /posts-by-categories/
+---
+
+
+<div class="container-fluid index">
+  <div class="row index all-posts">
+
+    <h1 class="header author-header">Articles</h1>
+    <p class="header categories">Group by <a href="{{ '/posts/' | relative_url }}">year</a> · <a href="{{ '/posts-by-categories/' | relative_url }}" aria-current="page">category</a></p>
+      {% for category in site.categories %}
+      <div class="col-md-12 content-panel articles">
+        <h2 id="{{ category | first }}-ref">{{ category | first }}</h2>
+        <ul>
+          {% for post in category[1] %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+            </li>
+          {% endfor %}
+
+        </ul>
+      </div>
+      {% endfor %}
+
+  </div>
+</div>
